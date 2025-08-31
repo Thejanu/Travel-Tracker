@@ -46,8 +46,8 @@ CREATE TABLE visited_countries (
 ### 3. Import CSV data
 Inside `psql`:
 ```sql
-\copy countries(country_code, country_name) FROM './database/countries.csv' DELIMITER ',' CSV HEADER;
-\copy visited_countries(country_code) FROM './database/visited_countries.csv' DELIMITER ',' CSV HEADER;
+\copy countries(country_code, country_name) FROM './db/countries.csv' DELIMITER ',' CSV HEADER;
+\copy visited_countries(country_code) FROM './db/visited_countries.csv' DELIMITER ',' CSV HEADER;
 ```
 
 ### 4. Add `.env`
